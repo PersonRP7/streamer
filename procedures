@@ -1,0 +1,2 @@
+Grant permissions to nginx:
+chmod -R a+r /home/dell/Desktop/projects/streamer/vids

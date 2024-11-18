@@ -7,4 +7,5 @@ services:
     volumes:
       - ${NGINX_CONF_PATH}:/etc/nginx/nginx.conf:ro
       - ${HTML_PATH}:/usr/share/nginx/html:ro
+      - ${VIDS_PATH}:/mnt/data:ro
     restart: unless-stopped
