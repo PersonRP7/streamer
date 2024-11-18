@@ -1,0 +1,10 @@
+services:
+  nginx:
+    image: tiangolo/nginx-rtmp 
+    container_name: nginx_server
+    ports:
+      - "5000:5000"
+    volumes:
+      - ${NGINX_CONF_PATH}:/etc/nginx/nginx.conf:ro
+      - ${HTML_PATH}:/usr/share/nginx/html:ro
+    restart: unless-stopped
